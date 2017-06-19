@@ -1,0 +1,328 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  background: #f4f4f4; }
+
+.topHeader {
+  width: 100%;
+  height: 56px;
+  background: #333333;
+  color: #fff;
+  line-height: 56px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
+.topHeaderTitle {
+  font-size: 16px;
+  margin: 0 16px; }
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto; }
+
+.projectWrapper {
+  display: inline-block;
+  height: 100px;
+  width: 17%;
+  max-width: 17%;
+  margin: 20px 16px; }
+
+.projectBox {
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+  background: #333333;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.1rem;
+  text-overflow: ellipsis;
+  overflow: hidden; }
+  .projectBox__exist {
+    height: 70px;
+    line-height: 70px; }
+  .projectBox__new {
+    height: 70px;
+    line-height: 70px; }
+
+.projectBox:hover {
+  color: #fff;
+  background: #000; }
+
+.button {
+  height: 5px;
+  width: 100%;
+  padding: 20px 0;
+  line-height: 5px;
+  background: #ED1C27;
+  color: #fff;
+  text-align: center;
+  font-size: 1.1rem; }
+
+.button:hover {
+  background: rgba(51, 51, 51, 0.7); }
+
+.spacing {
+  height: 5px;
+  width: 100%;
+  padding: 20px 0;
+  line-height: 5px;
+  background: #333333;
+  color: #fff;
+  text-align: center;
+  font-size: 1.1rem; }
+
+.cards {
+  width: 80%;
+  margin: 24px auto;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+
+.newPageTitle {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  margin-top: 50px;
+  text-align: center; }
+
+.discriptionText {
+  width: 80%;
+  margin: 16px auto; }
+
+.centerBox {
+  width: 100%;
+  text-align: center; }
+
+.createBttn {
+  display: inline-block;
+  width: 120px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  background: #4fbf00;
+  color: #fff;
+  padding: 16px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+
+.createBttn:hover {
+  opacity: 0.7;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
+.titleWrapper {
+  width: 100%;
+  border-bottom: solid 1px #D2D2D2; }
+
+.cardtitle {
+  font-size: 1rem;
+  padding-left: 16px;
+  padding-top: 16px; }
+
+.cardsInterfaceContainter {
+  display: flex;
+  width: 100%;
+  border-bottom: solid 1px #D2D2D2; }
+
+.cardsInterface {
+  margin: 16px 0;
+  display: inline-block;
+  width: 33%;
+  height: 100%;
+  text-align: center; }
+  .cardsInterface__left-text {
+    text-align: left; }
+
+.previewImage {
+  width: 80%;
+  margin: 16px;
+  border: solid 1px; }
+
+.pageSetting {
+  display: inline-block;
+  margin-top: 16px;
+  width: 120px;
+  background: #4fbf00;
+  color: #fff;
+  padding: 16px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+
+.pagesTitle {
+  width: 100%;
+  word-wrap: break-word;
+  font-size: 1rem; }
+
+.discriptionPreview {
+  width: 100%;
+  word-wrap: break-word; }
+
+.pageSetting:hover {
+  opacity: 0.7;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
+.archiveBox {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px 0;
+  border-bottom: solid 1px #D2D2D2; }
+
+.archiveSetting {
+  display: inline-block;
+  width: 120px;
+  margin-left: 16px;
+  padding: 16px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.archiveSetting:hover {
+  background: #D2D2D2; }
+
+.settingWrapper {
+  display: flex;
+  width: 30%; }
+
+.archivePageName {
+  width: 70%;
+  margin-left: 16px; }
+
+.lightbox {
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(51, 51, 51, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out; }
+
+.projectCreateBox {
+  display: none;
+  width: 400px;
+  height: auto;
+  background: #fff;
+  align-self: center;
+  margin: 0 auto;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+
+.headerCreatBox {
+  width: 100%;
+  height: 50px; }
+
+.createTitle {
+  height: 100%;
+  font-size: 1rem;
+  float: left;
+  line-height: 50px;
+  margin: 0 16px; }
+
+.closeImg {
+  width: 16px; }
+
+.centerFrom {
+  width: 80%;
+  margin: 20px auto; }
+
+.nameInput {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  margin: 16px 0;
+  border: none;
+  border-bottom: solid 2px #333333;
+  font-size: 1rem; }
+
+.nameInput:focus {
+  border-bottom: solid 2px #4fbf00;
+  outline: none; }
+
+.discriptionInput {
+  display: inline-block;
+  width: 100%;
+  height: 100px;
+  border: none;
+  outline: none;
+  border-bottom: solid 2px #333333;
+  font-size: 1rem; }
+
+.discriptionInput:focus {
+  border-bottom: solid 2px #4fbf00;
+  outline: none; }
+
+.errorMsg {
+  color: #ED1C27;
+  margin-bottom: 10px;
+  display: none; }
+
+.bttn {
+  display: inline-block;
+  border: none;
+  cursor: pointer; }
+  .bttn__create {
+    width: 120px;
+    padding: 16px;
+    background: none;
+    font-size: 1rem;
+    margin-bottom: 16px;
+    margin-right: 16px;
+    float: right; }
+  .bttn__create:hover {
+    opacity: 0.7;
+    background: #D2D2D2; }
+  .bttn__cancel {
+    margin: 0 10px;
+    float: right;
+    height: 100%;
+    background: none; }
+
+.confirmPrompt {
+  display: none;
+  width: 400px;
+  background: #fff;
+  height: auto;
+  align-self: center;
+  margin: 0 auto;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+
+.confirmText {
+  margin: 16px; }
+
+.action {
+  float: right;
+  display: inline-block;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 16px;
+  margin: 0 16px;
+  margin-bottom: 16px; }
+
+.action:hover {
+  background: #D2D2D2; }

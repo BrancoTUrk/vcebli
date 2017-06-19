@@ -1,0 +1,125 @@
+.main-content {
+  display: inline-block;
+  width: 100%;
+  overflow: auto; }
+  .main-content__component-main {
+    background: #ffffff; }
+  .main-content__component-highlight {
+    background: #000000;
+    overflow: hidden; }
+  .main-content__component-products {
+    background: #ffffff; }
+
+.content-title {
+  text-align: center;
+  font-size: 30px;
+  margin: 16px;
+  font-family: 'Arapey', serif; }
+
+.content-content {
+  display: flex;
+  overflow: none; }
+
+.content-text {
+  width: 100%;
+  margin: 20px; }
+
+.content-image {
+  width: 100%;
+  margin: 30px auto; }
+
+.image-text {
+  position: relative;
+  font-family: 'Arapey', serif;
+  font-size: 60px;
+  color: #ffffff; }
+
+.image {
+  width: 100%; }
+
+.anchor-nav {
+  margin: 0 16px;
+  align-self: center; }
+
+.logo-link {
+  align-self: center; }
+
+.logo-image {
+  margin: 0 16px;
+  width: 200px; }
+
+.cleanList {
+  align-self: flex-end;
+  justify-content: center;
+  width: 100%; }
+
+.cleanList ul {
+  position: relative; }
+
+.l-styling {
+  list-style-type: none; }
+
+.content-links {
+  float: left;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000000;
+  margin: 16px; }
+
+/* component text*/
+.left-content {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  background-color: #259FAB;
+  color: #ffffff;
+  align-items: center;
+  text-align: center;
+  background-image: url("../images/img/2017_06_07_C63_des_inter.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.aligner {
+  width: 100%;
+  height: auto;
+  align-self: center; }
+
+.left-title {
+  font-family: 'Arapey', serif;
+  font-size: 2rem;
+  width: 50%;
+  margin: 0 auto; }
+
+.left-subtitle {
+  color: #d2d2d2;
+  font-size: 1rem; }
+
+.content-infromation {
+  width: 80%;
+  margin: 0 auto; }
+
+.right-content {
+  width: 40%;
+  max-height: 500px; }
+
+.right-image {
+  width: 100%; }
+
+/*Product*/
+.product-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto; }
+
+.product-holder {
+  width: 241px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  height: 411px;
+  margin: 50px;
+  text-align: center; }
+
+.product-holder img {
+  max-width: 100%; }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>VCE Portal</title>
+	<link rel="stylesheet" href="../../css/portal.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script src="../../js/lib/jquery.js" type="text/javascript"></script>
+	<script src="../../js/portal.js"></script>
+</head>
+<body>
+	<section id="lightbox" class="lightbox">
+		<section id="creatBox" class="projectCreateBox">
+			<div class="headerCreatBox">
+				<h2 class="createTitle">Create new page</h2><button id="cancel" class="bttn bttn__cancel"><img class="closeImg" src="../images/svg/close.svg" alt=""></button><br>
+			</div>
+			<div class="centerFrom">
+				<input id="newProjectName" class="nameInput" type="text" placeholder="Page Name"><br>
+				<textarea id="newProjectDiscription" class="discriptionInput" cols="30" rows="10" placeholder="Add a discription like: This page is about the new promotion in the summer of 2017..."></textarea>
+				<div id="error" class="errorMsg">One of you fields is empty</div>
+			</div>
+			<button id="createProject" class="bttn bttn__create">CREATE</button>
+		</section>
+		<section id="confirmBox" class="confirmPrompt">
+			<p id="confirmText" class="confirmText"></p>
+			<button class="action action__confirm">YES</button><button id="cancelAction" class="action action__cancel">CANCEL</buttn>
+		</section>
+	</section>
+	<header class="topHeader">
+		<h2 class="topHeaderTitle">VCE dashboard</h2>
+	</header>
+
+		<article class="cards">	
+			<h2 class="newPageTitle">Create a new page!</h2>
+			<p id="discription" class="discriptionText">This tool is a visual content editor that helps you create content for Demandware. The tool uses drag and drop functionalities to help you create the page that you want to implement inside of demandware. You dont need to use any code and it will be easy and fast to create and implement in you current E-commerce website. </p>
+			<div class="centerBox">
+				<button id="new" class="createBttn">NEW PAGE</button>
+			</div>
+		</article>
+
+	<section id="active" class="cards">
+		<div class="titleWrapper"><h2 class="cardtitle">ACTIVE PAGES</h2></div>
+	</section>
+	<section id="archived" class="cards">
+			<div class="titleWrapper"><h2 class="cardtitle">ARCHIVES</h2></div>
+	</section>
+</body>
+</html>

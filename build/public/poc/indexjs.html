@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>VCE</title>
+		<!--build:css css/styles.min.css -->
+		<link href="https://fonts.googleapis.com/css?family=Arapey" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" href="../css/tool.css">
+		<link rel="stylesheet" href="../css/components.css">
+		<!-- enbuild -->
+		<link rel="import" href="../../bower_components/juicy-ace-editor/juicy-ace-editor.html">
+	</head>
+	<body>
+		<div id="lightbox" class="htmlBox">
+			<div class="htmlCopy">
+				<div class="htmlWrapper"><h2 class="htmlHeaderText">HTML</h2><img id="cancelBttn" class="htmlCloseBttn" src="../images/svg/close.svg"></div>
+				<div class="editorBox">
+					<juicy-ace-editor theme="ace/theme/idle_fingers" id="htmlOutput" class="html-textarea" wrapmode="true" mode="ace/mode/html"></juicy-ace-editor>
+				</div>
+				<input id="copyValue" class="copyInput" type="text">
+				<div class="htmlWrapper">
+				<button id="copyClip" class="copyBttn" data-clipboard-target="#copyValue">COPY HTML</button>
+				</div>
+			</div>
+			<div class="savePrompt">
+				<p class="saveTekst">You saved page </p>
+				<button id="confirmSave" class="promptBttn">OK</button>
+			</div>
+		</div>
+		<section id="test" class="central-content">
+			<header class="mainToolbar">
+				<div class="iconBttn"><a href="../portal/index.html" class="toolBttnLink"><img class="toolBarIcon" src="../images/svg/arrows.svg" alt="Back"></a></div>
+				<span class="projectName"></span>
+				<button id="getBttn" class="bttn">HTML</button>
+				<button id="saveBttn" class="bttn">SAVE</button>
+			</header>		
+			<section id="toolDrag" class="draggables">
+				<div class="iconBttn" id="menu-open">
+					<img src="../images/svg/tool.svg" alt="tool" class="toolBarIcon">
+				</div>
+				<section id="tool" class="toolsWrapper">
+					<h2 class="toolBars toolBars__title">COMPONENTS</h2>
+					<section class="componentWrapper">
+						<div id="drag-2" draggable="true" class="component"><img id="drag-2" src="../images/img/component1.png" width="128px" height="72px" alt="component"></div>
+						<div id="drag-0" draggable="true" class="component"><img id="drag-0" src="../images/img/component0.png" width="128px" height="72px" alt="component"></div>
+						<div id="drag-1" draggable="true" class="component"><img id="drag-1" src="../images/img/component2.png" width="128px" height="72px" alt="component"></div>
+					</section>
+				</section>
+			</section>
+		<div class="header-website">
+			<section class="main-content" draggable="false">
+				<article class="content-content">
+					<a class="logo-link" href="#"><img class="logo-image" src="http://demandware.edgesuite.net/aayl_prd/on/demandware.static/Sites-CTF-Site/-/default/dw1a6cb47c/img/logo.png" alt="Logo"></a>
+					<div class="cleanList">
+						<ul class="l-styling">
+							<li><a href="#" class="content-links">MEN</a></li>
+							<li><a href="#" class="content-links">WOMAN</a></li>
+							<li><a href="#" class="content-links">PEDRO DEL HIERRO</a></li>
+						</ul>
+					</div>
+				</article>
+			</section>
+		</div>
+			<section class="dropzone" id="dropzone">
+			</section>
+		</section>
+	</body>
+	<script src="../js/lib/jquery.js" type="text/javascript"></script>
+	<script src="../js/lib/clipboard.min.js"></script>
+	<!--build:js js/main.min.js -->
+	<script src="../js/clipboard.js"></script>
+	<script src="../js/draganddrop-js.js"></script>
+	<!-- endbuild -->
+</html>

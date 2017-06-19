@@ -1,0 +1,374 @@
+* {
+  box-sizing: border-box; 
+}
+body, p, h2, ul {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; }
+
+button {
+  display: block;
+  border: none;
+  outline-style: none;
+  background: none; }
+
+.central-content {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.menu-open .draggables {
+  transform: translateX(0px); }
+
+.menu-open .dropzone, .menu-open .header-website {
+  transform: translateX(220px);
+  width: calc(100% - 220px); }
+
+.draggables {
+  position: fixed;
+  width: 300px;
+  height: calc(100vh - 56px);
+  background: #3f3f3f;
+  color: #ffffff;
+  transform: translateX(-220px);
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -ms-transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms;
+  z-index: 1; }
+
+.dropzone {
+  width: 100%;
+  height: calc(100vh - 56px - 59px);
+  padding-left: 80px;
+  background: #f4f4f4;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transform: translateX(0px);
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -ms-transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms; }
+
+.cdrop {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  border: 3px dashed rgba(237, 28, 39, 0.5);
+  display: none;
+  opacity: 0;
+  text-align: center;
+  -webkit-transition: opacity 3s ease-in-out;
+  -moz-transition: opacity 3s ease-in-out;
+  -ms-transition: opacity 3s ease-in-out;
+  -o-transition: opacity 3s ease-in-out;
+  transition: opacity 3s ease-in-out; }
+
+.cdrop:hover {
+  opacity: 0; }
+
+.title {
+  margin: 10px 20px; }
+
+.toolsWrapper {
+  display: none;
+  width: 100%;
+  height: auto; }
+
+.toolBars {
+  width: 100%;
+  height: 50px;
+  color: #fff; }
+  .toolBars__title {
+    font-size: 1.2rem;
+    line-height: 50px;
+    padding: 0 20px; }
+
+.mainToolbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  background-color: #333333;
+  color: #ffffff; }
+
+.iconBttn {
+  margin-left: 16px;
+  margin-right: 16px;
+  height: 48px;
+  width: 48px;
+  float: right;
+  border-radius: 50%; }
+
+.iconBttn:hover {
+  background: rgba(210, 210, 210, 0.2);
+  border-radius: 50%; }
+
+.toolBttnLink {
+  display: inline-block;
+  height: 100%;
+  width: 100%; }
+
+.toolBarIcon {
+  display: block;
+  height: 100%;
+  width: 24px;
+  margin: 0 auto;
+  cursor: pointer; }
+
+.projectName {
+  margin: 0 auto; }
+
+.bttn {
+  display: block;
+  margin: 0 16px;
+  padding: 0 16px;
+  height: 48px;
+  color: #ffffff;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  float: right; }
+
+.bttn:hover {
+  background-color: rgba(255, 255, 255, 0.2); }
+
+.componentWrapper {
+  width: 276px;
+  height: auto;
+  margin: 20px auto;
+  margin-bottom: 50px;
+  overflow: overlay; }
+
+.component {
+  margin: 5px;
+  width: 128px;
+  height: 72px;
+  line-height: 72px;
+  text-align: center;
+  background: #fff;
+  color: #ED1C27;
+  z-index: 999;
+  float: left;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  cursor: grab;
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  transition: all 200ms linear; }
+
+.component:hover {
+  transform: scale(0.9); }
+
+.component_handle {
+  opacity: 0;
+  margin-top: -30px;
+  width: 100%;
+  height: 48px;
+  max-height: 0px;
+  background: #333333;
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  transition: all 200ms linear; }
+  .component_handle.is-open {
+    margin: 0px;
+    max-height: 48px;
+    opacity: 1; }
+
+.handle_bttn {
+  display: block;
+  background: none;
+  color: #ffffff;
+  height: 100%;
+  border: none;
+  cursor: pointer; }
+  .handle_bttn__drag {
+    float: left;
+    margin-left: 16px;
+    margin-right: 8px;
+    cursor: move; }
+  .handle_bttn__delete {
+    height: 24px;
+    width: 24px;
+    float: right;
+    margin-left: 8px;
+    margin-right: 8px; }
+    .handle_bttn__delete:hover {
+      background: #ed0000;
+      border-radius: 50%; }
+
+.new-element {
+  margin-bottom: -5px; }
+
+.header-website {
+  padding-left: 80px; }
+
+.contentHead {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 20px 0; }
+  .contentHead__horCenter {
+    width: 100%;
+    text-align: center; }
+  .contentHead__verCenter {
+    position: relative;
+    margin: 20px;
+    padding-bottom: 5px;
+    top: 50px;
+    transform: translateX(-50%); }
+
+.contentImage {
+  width: 368px;
+  height: 70%;
+  margin: 20px;
+  background: #333333; }
+
+.cleanList {
+  list-style: none; }
+
+.image-container {
+  position: absolute;
+  width: 30%;
+  height: 100vh;
+  background: #ED1C27;
+  overflow-y: scroll;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out; }
+
+.imageEle {
+  width: 100%;
+  margin: 0 auto; }
+
+.htmlBox {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 2; }
+
+.htmlCopy {
+  display: none;
+  width: 400px;
+  align-self: center;
+  margin: 0 auto;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
+
+.htmlWrapper {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background: #fff; }
+
+.htmlHeaderText {
+  float: left;
+  margin: 0 16px;
+  line-height: 50px;
+  font-size: 1rem; }
+
+.htmlCloseBttn {
+  float: right;
+  width: 16px;
+  margin: 16px;
+  cursor: pointer; }
+
+.editorBox {
+  width: 400px;
+  height: 300px; }
+
+.copyBttn {
+  display: block;
+  height: 48px;
+  margin: 4px 16px;
+  padding: 0 16px;
+  font-size: 1rem;
+  color: #4fbf00;
+  cursor: pointer;
+  float: right;
+  border: none;
+  background: none;
+  outline-style: none;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -ms-transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms; }
+
+.copyBttn:hover {
+  background: rgba(51, 51, 51, 0.2); }
+
+.copyInput {
+  display: block;
+  margin-top: -20px;
+  border: none;
+  outline-style: none; }
+
+.savePrompt {
+  display: none;
+  width: 400px;
+  align-self: center;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
+
+.saveTekst {
+  margin: 16px;
+  font-size: 1rem; }
+
+.promptBttn {
+  float: right;
+  height: 48px;
+  margin: 16px;
+  padding: 0 16px;
+  font-size: 1rem;
+  margin-top: 0px;
+  color: #4fbf00;
+  cursor: pointer;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -ms-transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms; }
+
+.promptBttn:hover {
+  background: rgba(51, 51, 51, 0.2); }
+
+[contenteditable="true"] {
+  padding: 5px;
+  border: 3px dashed rgba(237, 28, 39, 0); }
+
+[contenteditable="true"]:hover {
+  padding: 5px;
+  border: 3px dashed rgba(237, 28, 39, 0.5);
+  outline: none; }
+
+[contenteditable="true"]:active,
+[contenteditable="true"]:focus {
+  border: 3px dashed rgba(237, 28, 39, 0.5);
+  outline: none; }
+
+[contenteditable="true"]:focus {
+  background: #f2f2f2;
+  color: black;
+  padding: 5px; }

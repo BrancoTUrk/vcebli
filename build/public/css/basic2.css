@@ -1,0 +1,225 @@
+body, p, h2, ul {
+  margin: 0;
+  padding: 0; }
+
+.header-top {
+  widows: 100%;
+  height: 100px;
+  background: #ED1C27; }
+
+.menu {
+  width: auto;
+  padding: 0 20px;
+  line-height: 100px; }
+  .menu__left {
+    float: left;
+    line-height: 100px;
+    text-align: center; }
+
+.central-content {
+  width: 100%;
+  height: 100%; }
+
+.draggables {
+  width: 30%;
+  height: 100vh;
+  background: #ED1C27;
+  float: left;
+  overflow-y: scroll;
+  overflow-x: visible; }
+
+#dropzone {
+  width: 70%;
+  height: 100vh;
+  background: #f4f4f4;
+  float: left;
+  overflow-y: scroll;
+  overflow-x: hidden; }
+
+.cdrop {
+  width: 100%;
+  height: 0px;
+  padding: 20px;
+  border: 3px dashed rgba(237, 28, 39, 0.5);
+  display: none;
+  opacity: 0;
+  text-align: center;
+  -webkit-transition: opacity 3s ease-in-out;
+  -moz-transition: opacity 3s ease-in-out;
+  -ms-transition: opacity 3s ease-in-out;
+  -o-transition: opacity 3s ease-in-out;
+  transition: opacity 3s ease-in-out; }
+
+.cdrop:hover {
+  opacity: 0; }
+
+.component {
+  margin: 20px auto;
+  width: 128px;
+  height: 72px;
+  line-height: 128px;
+  text-align: center;
+  background: #000;
+  color: #ED1C27;
+  z-index: 999; }
+
+.new-element {
+  width: 100%;
+  height: auto; }
+  .new-element__0 {
+    background: #ffffff;
+    color: #000;
+    height: 500px; }
+  .new-element__1 {
+    background: #0f0f0f;
+    color: #fff;
+    height: 300px; }
+  .new-element__2 {
+    background: #000;
+    color: #fff;
+    height: 100px; }
+
+.contentText {
+  overflow: hidden; }
+  .contentText__0 {
+    margin: 0 20px;
+    float: left; }
+  .contentText__1 {
+    height: 50%;
+    text-align: center;
+    margin: 0 20px; }
+  .contentText__2 {
+    text-decoration: none;
+    color: #ffffff;
+    float: left;
+    margin: 20px; }
+
+.contentHead {
+  display: inline-block;
+  font-size: 1.2rem; }
+  .contentHead__horCenter {
+    margin: 20px;
+    padding-bottom: 5px;
+    margin-left: 50%;
+    transform: translateX(-50%); }
+  .contentHead__verCenter {
+    position: relative;
+    margin: 20px;
+    padding-bottom: 5px;
+    top: 50px;
+    transform: translateX(-50%); }
+
+.contentImage {
+  width: 40%;
+  height: 70%;
+  margin: 20px;
+  background: #0f0f0f; }
+
+.cleanList {
+  list-style: none; }
+
+.bttn {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  color: #ffffff;
+  background: #ED1C27;
+  border: solid 2px #000000;
+  font-size: 1.2rem; }
+  .bttn__html {
+    display: inline-block;
+    width: 100px;
+    line-height: 50px;
+    margin: 5px;
+    text-align: center; }
+
+.bttn:hover {
+  background: #000;
+  color: #ED1C27; }
+
+.image-container {
+  position: absolute;
+  width: 30%;
+  height: 100vh;
+  background: #ED1C27;
+  overflow-y: scroll;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out; }
+
+.imageEle {
+  width: 100%;
+  margin: 0 auto; }
+
+.htmlBox {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out; }
+
+.htmlCopy {
+  width: 400px;
+  height: 400px;
+  align-self: center;
+  margin: 0 auto;
+  text-align: center; }
+
+.html-textarea {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%; }
+
+[contenteditable="true"]:hover {
+  padding: 5px;
+  border: 3px dashed rgba(237, 28, 39, 0.5);
+  outline: none; }
+
+[contenteditable="true"]:active,
+[contenteditable="true"]:focus {
+  border: 3px dashed rgba(237, 28, 39, 0.5);
+  outline: none; }
+
+[contenteditable="true"]:focus {
+  background: #f2f2f2;
+  color: black;
+  padding: 5px; }
+
+/*Old*/
+.test-drag-1 {
+  width: 100%;
+  height: 500px;
+  background: #6A6BA3;
+  color: #fff;
+  line-height: 500px;
+  text-align: center; }
+
+.test-drag-2 {
+  width: 100%;
+  height: 500px;
+  background: #A3D7EF;
+  color: #fff;
+  line-height: 500px;
+  text-align: right; }
+
+.test-drag-3 {
+  width: 100%;
+  height: 500px;
+  background: #000000;
+  font-size: 3rem;
+  color: #fff;
+  line-height: 500px;
+  padding: 20px; }

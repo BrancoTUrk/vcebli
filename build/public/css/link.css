@@ -1,0 +1,30 @@
+body {
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px; }
+
+.poc-holder {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto; }
+
+.links {
+  display: block;
+  width: 150px;
+  height: 40px;
+  margin: 20px;
+  background: #ED1C27;
+  text-align: center;
+  list-style-type: none;
+  line-height: 40px; }
+
+.links:hover {
+  background-color: green; }
+
+.hyper {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #fff; }
